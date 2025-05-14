@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Menu</title>
+  </head>
+  <body>
+    <header
+      class="top-0 left-0 w-full z-50 shadow-[0px_10px_20px_rgba(0,0,0,0.1)]"
+    >
+      <section id="section1">
+        <div class="container">
+          <div
+            class="flex justify-between items-baseline py-5 mb-3 border-b border-[#cbc3c3]"
+          >
+            <div>
+              <a href="index.htm">
+                <img src="./img/logo.svg" alt="" class="w-[140px]" />
+              </a>
+            </div>
+            <div class="hidden min-[1200px]:flex gap-2.5">
+              <img src="./img/network.svg" alt="" class="w-[25px]" />
+              <select name="" id="" class="text-[18px] text-black">
+                <option value="Azerbaycanca">Azərbaycanca</option>
+                <option value="English">English</option>
+              </select>
+            </div>
+            <div class="flex gap-3.5 items-center min-[1200px]:hidden">
+              <button
+                class="text-xs text-black tracking-[0.2em] bg-[#CFEB0B] py-[5px] px-[10px] rounded-[45px] uppercase border border-black hover:bg-[#fff]"
+              >
+                Daxil ol
+              </button>
+              <i onclick="showMenu()" class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div class="flex justify-between items-baseline">
+            <nav>
+              <ul class="hidden min-[1200px]:flex gap-3.5 nav">
+                <li><a class="text-[18px]" href="#">Menyu</a></li>
+                <li><a class="text-[18px]" href="#">Təkliflər</a></li>
+                <li><a class="text-[18px]" href="#">Papa Bonus</a></li>
+                <li><a class="text-[18px]" href="#">Papa Talk</a></li>
+                <li><a class="text-[18px]" href="#">Haqqımızda</a></li>
+              </ul>
+            </nav>
+            <div>
+              <button
+                class="hidden min-[1200px]:inline-block text-black tracking-[0.2em] bg-[#CFEB0B] py-[8px] px-[24px] rounded-[45px] text-sm uppercase border border-black hover:bg-[#fff]"
+              >
+                Daxil ol
+              </button>
+            </div>
+          </div>
+          <div
+            class="hidden w-[100%] py-3 bg-[#fff] absolute left-0 px-10 z-[99999] border-b border-[#cbc3c3]"
+            id="navMenu"
+          >
+            <div class="py-5 border-t border-b border-[#cbc3c3]">
+              <nav>
+                <ul class="nav">
+                  <li>
+                    <a
+                      class="text-[15px] py-1.5 font-bold inline-block"
+                      href="#"
+                      >Menyu</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-[15px] py-1.5 inline-block" href="#"
+                      >Təkliflər</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-[15px] py-1.5 inline-block" href="#"
+                      >Papa Bonus</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-[15px] py-1.5 inline-block" href="#"
+                      >Papa Talk</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-[15px] py-1.5 inline-block" href="#"
+                      >Haqqımızda</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mt-4 flex gap-2.5">
+              <img src="./img/network.svg" alt="" class="w-[25px]" />
+              <select name="" id="" class="text-[18px] text-black">
+                <option value="English">English</option>
+                <option value="Azerbaycanca">Azerbaycanca</option>
+              </select>
+            </div>
+          </div>
+          <div class="py-3.5 overflow-x-auto md:overflow-visible">
+            <ul id="list" class="flex gap-2.5 flex-nowrap nav2 md:flex-wrap">
+              <li
+                class="text-black text-[18px] font-sans hover:bg-[#f0f0f0] cursor-pointer rounded-[100px] py-[4px] px-[10px]"
+                onclick="showCategory(this,'')"
+              >
+                Kampaniyalar
+              </li>
+              <li
+                class="text-black text-[18px] font-sans hover:bg-[#f0f0f0] cursor-pointer rounded-[100px] py-[4px] px-[10px]"
+                onclick="showCategory(this,'pizza')"
+              >
+                Pizza
+              </li>
+              <li
+                class="text-black text-[18px] font-sans hover:bg-[#f0f0f0] cursor-pointer rounded-[100px] py-[4px] px-[10px]"
+                onclick="showCategory(this,'lunch')"
+              >
+                Qəlyanaltı
+              </li>
+              <li
+                class="text-black whitespace-nowrap text-[18px] font-sans hover:bg-[#f0f0f0] cursor-pointer rounded-[100px] py-[4px] px-[10px]"
+                onclick="showCategory(this,'')"
+              >
+                Pizza Party
+              </li>
+              <li
+                class="text-black text-[18px] font-sans hover:bg-[#f0f0f0] rounded-[100px] cursor-pointer py-[4px] px-[10px]"
+                onclick="showCategory(this,'pasta')"
+              >
+                Pasta
+              </li>
+              <li
+                class="text-black text-[18px] font-sans hover:bg-[#f0f0f0] rounded-[100px] cursor-pointer py-[4px] px-[10px]"
+                onclick="showCategory(this,'salat')"
+              >
+                Salatlar
+              </li>
+              <li
+                class="text-black text-[18px] font-sans hover:bg-[#f0f0f0] rounded-[100px] cursor-pointer py-[4px] px-[10px]"
+                onclick="showCategory(this,'drink')"
+              >
+                İçkilər
+              </li>
+              <li
+                class="text-black text-[18px] font-sans hover:bg-[#f0f0f0] rounded-[100px] cursor-pointer py-[4px] px-[10px]"
+                onclick="showCategory(this,'desert')"
+              >
+                Desertlər
+              </li>
+              <li
+                class="text-black text-[18px] font-sans hover:bg-[#f0f0f0] rounded-[100px] cursor-pointer py-[4px] px-[10px]"
+                onclick="showCategory(this,'souses')"
+              >
+                Souslar
+              </li>
+              <li
+                class="text-black text-[18px] font-sans hover:bg-[#f0f0f0] rounded-[100px] cursor-pointer py-[4px] px-[10px]"
+                onclick="showCategory(this,'papadias')"
+              >
+                Papadias
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="py-4">
+      <section>
+        <div class="container">
+          <h2 class="uppercase" style="font-size: 36px; margin-bottom: 10px">
+            Kampaniyalar
+          </h2>
+          <div class="common_vis flex justify-between">
+            <div id="allProducts" class="flex flex-col lg:basis-[60%]">
+              <div class="grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 gap-6">
+                <div
+                  class="rounded-lg group hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] overflow-hidden w-full flex flex-col justify-between"
+                >
+                  <div class="">
+                    <img
+                      src="./img/cikenparmezan.jpg"
+                      alt=""
+                      class="w-full object-cover rounded-xl"
+                    />
+                  </div>
+                  <div class="p-3 mb-3 relative">
+                    <h3 class="lg:text-[16px] text-[12px] head_p">
+                      Çiken Parmezan & Vegetarian
+                    </h3>
+                    <p
+                      class="text-[#72747A] text-[10px] lg:text-[14px] font-medium py-2"
+                    >
+                      Təklifə daxildir: Orta Çiken Parmezan + Orta Vegetarian
+                    </p>
+                    <p class="text-[#212529] text-xs">39.00 AZN</p>
+                  </div>
+                  <button
+                    class="opacity-0 group-hover:opacity-100 text-xs uppercase bg-[#cfeb0b] py-1 w-[80%] text-center mx-auto block rounded-[50px] border border-gray-950 my-3"
+                  >
+                    Səbətə əlave et
+                  </button>
+                </div>
+                <div
+                  class="rounded-lg group hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] overflow-hidden w-full flex flex-col justify-between"
+                >
+                  <div class="">
+                    <img
+                      src="./img/ikiboyuk.jpg"
+                      alt=""
+                      class="w-full object-cover rounded-xl"
+                    />
+                  </div>
+                  <div class="p-3">
+                    <h3 class="lg:text-[16px] text-[12px] head_p">
+                      İKİ BÖYÜK Crispy Pepperoni & Marqarita
+                    </h3>
+                    <p
+                      class="text-[#72747A] text-[10px] lg:text-[14px] font-medium py-2"
+                    >
+                      Böyük Crispy Pepperoni + Böyük Marqarita - CƏMİ 33 AZN!
+                    </p>
+                    <p class="text-[#212529] text-xs">33.00 AZN</p>
+                  </div>
+                  <button
+                    class="opacity-0 group-hover:opacity-100 text-xs uppercase bg-[#cfeb0b] py-1 w-[80%] text-center mx-auto block rounded-[50px] border border-gray-950 my-3"
+                  >
+                    Səbətə əlave et
+                  </button>
+                </div>
+                <div
+                  class="rounded-lg w-full group hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] overflow-hidden flex flex-col justify-between"
+                >
+                  <div class="">
+                    <img
+                      src="./img/gobelek.jpg"
+                      alt=""
+                      class="w-full object-cover rounded-xl"
+                    />
+                  </div>
+                  <div class="p-3">
+                    <h3 class="lg:text-[16px] text-[12px] head_p">
+                      Çiken Göbələk & Klassik Pepperoni
+                    </h3>
+                    <p
+                      class="text-[#72747A] text-[10px] lg:text-[14px] font-medium py-2"
+                    >
+                      Kiçik Çiken Göbələk + Kiçik Klassik Pepperoni + Çiken
+                      poppers BBQ
+                    </p>
+                    <p class="text-[#212529] text-xs">28.00 AZN</p>
+                  </div>
+                  <button
+                    class="opacity-0 group-hover:opacity-100 text-xs uppercase bg-[#cfeb0b] py-1 w-[80%] text-center mx-auto block rounded-[50px] border border-gray-950 my-3"
+                  >
+                    Səbətə əlave et
+                  </button>
+                </div>
+                <div
+                  class="rounded-lg w-full group hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] overflow-hidden flex flex-col justify-between"
+                >
+                  <div class="">
+                    <img
+                      src="./img/kicikmeksika.jpg"
+                      alt=""
+                      class="w-full object-cover rounded-xl"
+                    />
+                  </div>
+                  <div class="p-3">
+                    <h3 class="lg:text-[16px] text-[12px] head_p">
+                      Kiçik Meksika + Pepperoni Rolls + Kartof dilimləri
+                    </h3>
+                    <p
+                      class="text-[#72747A] text-[10px] lg:text-[14px] font-medium py-2"
+                    >
+                      Kiçik Meksika + Pepperoni Rolls + Kartof dilimləri -
+                    </p>
+                    <p class="text-[#212529] text-xs">19.00 AZN</p>
+                  </div>
+                  <button
+                    class="opacity-0 group-hover:opacity-100 text-xs uppercase bg-[#cfeb0b] py-1 w-[80%] text-center mx-auto block rounded-[50px] border border-gray-950 my-3"
+                  >
+                    Səbətə əlave et
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="basket"
+              class="sticky top-0 md:top-4 overflow-y-auto basis-[32%] lg:block hidden md:block maxheight"
+            >
+              <div class="chevron-back" onclick="goBack()">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div
+                class="lg:block mx-auto p-6 md:rounded-lg w-full bg-white padding-70"
+              >
+                <div class="mb-6">
+                  <span
+                    id="address"
+                    class="w-full flex items-baseline gap-2 p-2 border border-gray-300 rounded-md text-[#2D5D2A]"
+                  >
+                    <img
+                      src="./img/sebet2.svg"
+                      alt=""
+                      class="w-[20px] mr-0 text-[#2D5D2A] inline" />Catdirilma
+                    unvanini daxil edin<i
+                      onclick="handleLocation()"
+                      class="fa-solid fa-check"
+                    ></i
+                  ></span>
+                </div>
+                <div id="sebet_c" class="py-1 w-full max-w-[350px] mx-auto">
+                  <div
+                    id="sebet_esas"
+                    class="text-center space-x-1 border border-gray-300 w-full p-6 rounded-lg"
+                  >
+                    <img
+                      id="emptyBasketImage"
+                      src="./img/sebet.svg"
+                      alt=""
+                      class="w-[60px] inline-block"
+                    />
+                    <p
+                      id="emptyBasketMessage"
+                      class="text-sm font-medium text-gray-500"
+                    >
+                      Səbətiniz boşdur
+                    </p>
+                    <div
+                      class="flex-grow max-h-[200px] overflow-y-auto"
+                      id="sebet"
+                    ></div>
+                    <div class="sticky bottom-0 bg-white" id="yekun"></div>
+                  </div>
+                </div>
+                <div class="my-6">
+                  <input
+                    type="text"
+                    id="promo"
+                    class="w-full p-2 border border-gray-300 rounded-md"
+                    placeholder="Promokodunuz varmı? Onu burada daxil edin"
+                  />
+                </div>
+                <button
+                  id="tesdiqBtn"
+                  class="w-full px-7 py-2 bg-[#dedede] text-white rounded-[50px] text-sm font-semibold cursor-not-allowed border border-transparent enabled:bg-[#cfeb0b] enabled:text-black enabled:border-black enabled:hover:bg-white transition-all duration-300"
+                  disabled
+                >
+                  SİFARIŞİN TƏSDİQİNƏ KEÇİD EDİN
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="mobile-cart-bar"
+            onclick="showCart()"
+            class="fixed bottom-0 left-0 w-full bg-[#2d5d2a] text-white p-3 justify-between items-center lg:!hidden"
+          >
+            <div class="flex items-center gap-2 w-auto]">
+              <img
+                src="./img/mobilsebet.svg"
+                alt=""
+                style="width: 30px; height: 30x"
+              />
+              <span id="mobile-cart-count">0</span>
+            </div>
+            <p id="mobile-cart-total">0.00 AZN</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div
+            id="modalProduct"
+            style="background-color: rgba(0, 0, 0, 0.5)"
+            class="fixed top-0 left-0 bottom-0 right-0 w-full flex invisible -z-1 opacity-0 items-center justify-center"
+          >
+            <div
+              id="modalProductBar"
+              class="bg-white max-w-[632px] h-full md:h-[90%] md:min-h-[608px] w-full md:rounded-[40px] p-3"
+            >
+              <div class="rounded-lg">
+                <div class="flex justify-end items-center"></div>
+              </div>
+            </div>
+            <div
+              id="modalProductBar_p"
+              class="relative bg-white w-full max-w-[746px] lg:max-w-[1140px] lg:h-[95%] h-full lg:rounded-[40px] !overflow-y-scroll"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#65A17A] w-full">
+      <div class="container">
+        <div class="grid grid-cols-2 py-5 md:grid-cols-4">
+          <div class="text-left">
+            <p class="text-white foot_p pb-3">Sirketimiz</p>
+            <ul>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Haqqımızda</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Restoranlar</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >İnqrediyentlər</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Papa Bonus</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Papa Talk</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="text-left">
+            <p class="foot_p text-white pb-3">Destek</p>
+            <ul>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Bizimlə əlaqə saxlayın</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Qeydiyyatdan kecin</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Sual-Cavab</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Bizim desteyimiz</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full">
+            <div class="p-2 bg-white rounded-md my-2">
+              <input
+                class="w-full"
+                type="email"
+                placeholder="E-poct unvanini daxil et"
+              />
+            </div>
+            <div class="flex justify-end w-full mt-4">
+              <input
+                class="uppercase text-white bg-black p-2 px-3 rounded-md inline-block font-medium"
+                type="submit"
+                name=""
+                id=""
+                value="Abune olun"
+              />
+            </div>
+            <div class="py-3">
+              <p class="text-[14px] text-white">
+                Qeydiyyatdan keçməklə mən Papa John's-dan marketinq
+                e-məktublarını almağa razıyam. Məxfilik Siyasətimizə bax.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-[40px] flex items-center flex-col md:flex-row justify-between"
+        >
+          <p
+            class="text-white my-4 foot_p text-[18px] md:text-[24px] lg:text-[32px]"
+          >
+            Daha Yaxşı İnqrediyentlər. Daha Yaxşı Pizza.
+          </p>
+          <a class="" href="">
+            <img class="w-[160px]" src="./img/footer.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <hr class="mt-[40px] text-white" />
+      <div class="container">
+        <div
+          class="flex items-center mt-[40px] justify-between flex-col md:flex-row"
+        >
+          <div class="my-6">
+            <ul class="flex gap-[20px]">
+              <li>
+                <a
+                  href=""
+                  class="text-white font-sans text-[10px] md:text-[14px]"
+                  >Məxfilik siyasəti</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white font-sans text-[10px] md:text-[14px]"
+                  >Kuki fayılları ilə əlaqəli siyasət</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white font-sans text-[10px] md:text-[14px]"
+                  >Şərtlər və Qaydalar</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white font-sans text-[10px] md:text-[14px]"
+                  >Xəritə</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="text-center flex items-center gap-[30px]">
+            <a href=""> <img class="w-[30px]" src="./img/face.svg" alt="" /></a>
+            <a href=""><img class="w-[30px]" src="./img/insta.svg" alt="" /></a>
+            <a href=""
+              ><img class="w-[30px]" src="./img/youtube.svg" alt=""
+            /></a>
+            <a href=""
+              ><img class="w-[30px]" src="./img/tiktok.svg" alt=""
+            /></a>
+            <a href=""><img class="w-[30px]" src="./img/owl.svg" alt="" /></a>
+          </div>
+        </div>
+
+        <p class="text-white text-[12px] lg:text-[14px] font-sans py-5">
+          Mümkün ödəniş üsulları:
+        </p>
+        <div class="py-3">
+          <img src="./img/footer_payments.png" alt="" />
+        </div>
+        <p class="pb-[100px] text-white text-[12px] lg:text-[14px] font-sans">
+          ©2024 Papa Johns International, Inc. Bütün hüquqlar qorunur.
+          Məhsulların qiymətləri dəyişə bilər. İçkilər ilə bağlı bütün ticarət
+          nişanları təchizatçı tərəfdaşlarımızın qeydiyyatlı ticarət
+          nişanlarıdır. Bəzi təkliflər bir neçə pizzaların alınmasını tələb
+          edir. Bəzi təkliflər yalnız onlayn mövcuddur. Kampaniyalar, kombo və
+          endirimlər eyni zamanda istifadə edilə və toplana bilməz. Saytda
+          göstərilən məhsulların şəkli həmin məhsulun real görünüşündən fərqlənə
+          bilər. Sifarişlər təyin olunmuş çatdırılma sahəsində yerinə yetirilir.
+          Çatdırılma 10 AZN-dən sifariş etdikdə həyata keçirilir.
+        </p>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

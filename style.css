@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sigmar&display=swap");
+
+@font-face {
+  font-family: "Papa";
+  src: url(".ө/font/PapaSans-Regular.woff") format("woff2"),
+    url("../fonts/PapaSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Papa Bold";
+  src: url("../fonts/PapaSans-Bold.woff") format("woff2"),
+    url("../fonts/PapaSans-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Papa Heavy";
+  src: url("font/PapaSans-Heavy.woff") format("woff2"),
+    url("font/PapaSans-Heavy.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("font/Rubik-Regular.woff") format("woff2"),
+    url("font/Rubik-Regular.woff") format("woff");
+}
+
+.container {
+  max-width: 78%;
+  margin: auto;
+}
+.nav li a,
+select,
+.head_p,
+.foot_p,
+h2 {
+  font-family: "Papa Heavy", sans-serif;
+  font-weight: 400;
+}
+.nav2 li a {
+  font-family: "Rubik", serif;
+}
+.active {
+  display: block;
+}
+.activeli {
+  background-color: black;
+  color: white !important;
+}
+.circle {
+  width: 1000px !important;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.toggle-act {
+  z-index: 999;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+#sebet::-webkit-scrollbar {
+  width: 6px;
+}
+
+#sebet::-webkit-scrollbar-thumb {
+  background-color: #2d5d2a;
+  border-radius: 10px;
+}
+
+#sebet::-webkit-scrollbar-track {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+}
+
+#basket::-webkit-scrollbar {
+  display: none;
+}
+.chevron-back {
+  display: none;
+}
+.padding-70 {
+  padding-top: 15px !important;
+}
+.maxheight {
+  max-height: 80vh !important;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .circle {
+    width: 100% !important;
+    padding: 10px;
+  }
+  .cart-overlay {
+    position: fixed;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .chevron-back {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #2d5d2a;
+    cursor: pointer;
+  }
+  .padding-70 {
+    padding-top: 70px !important;
+  }
+  .maxheight {
+    max-height: initial !important;
+  }
+}

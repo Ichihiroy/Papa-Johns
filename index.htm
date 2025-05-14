@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleMain.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/c4cf5b3ba5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>HomePage</title>
+    <style></style>
+  </head>
+  <body>
+    <div
+      class="header-mobile w-[100%] display fixed top-0 flex justify-between items-center p-4 bg-white"
+      style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3)"
+    >
+      <img src="./img/logo.svg" class="w-[140px]" />
+      <div class="flex items-center gap-4">
+        <button
+          class="bg-[#cfeb0b] px-4 py-2 rounded-4xl border-green-950 border-[1px] text-green-1000"
+        >
+          SİFARİŞ ET
+        </button>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div
+      class="bg-white mb-8 w-[100%] flex justify-center fixed top-0 z-50"
+      style="box-shadow: 1px 1px 6px 2px #dbdbdb"
+    >
+      <div class="header-web p-4">
+        <div
+          class="display flex justify-between items-center px-4 py-0 bg-white"
+        >
+          <img src="img/logo.svg" class="w-[140px]" />
+          <div class="flex items-center gap-2">
+            <img src="img/globe-1.svg" />
+            <p class="font-bold">Azərbaycanca</p>
+            <img src="img/down-arrow (1).png" alt="flag" class="w-[15px]" />
+          </div>
+        </div>
+        <hr class="border-[.5px] my-5 p-0" style="color: #e7e7e7" />
+        <div class="flex justify-between items-center px-4 py-0 bg-white">
+          <div
+            class="flex items-center gap-[20px]"
+            style="gap: 35px; font-family: 'Papa Bold'; font-size: 17px"
+          >
+            <p><a href="menu.html">Menyu</a></p>
+            <p>Təkliflər</p>
+            <p>Papa Bonus</p>
+            <p>Papa Talk</p>
+            <p>Haqqımızda</p>
+          </div>
+          <button
+            class="bg-[#cfeb0b] px-4 py-2 rounded-4xl border-green-950 border-[1px] text-green-1000"
+          >
+            SİFARİŞ ET
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper lg:mt-[180px] mt-[100px]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="img/1260x560-kichik-Çiken-Göbələk--Klassik-1-Pepperoni-Bolt.png"
+          />
+        </div>
+        <div class="swiper-slide"><img src="img/1260x560---ulduz.png" /></div>
+        <div class="swiper-slide"><img src="img/1260x560-tetbiq.png" /></div>
+        <div class="swiper-slide">
+          <img src="img/1260x560-Cola-orta-Çiken-Parmezan--Vegetarian.png" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="img/1260x560-Iki-Boyuk-crispy-cheese-pepperoni-margarita.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/1260x560---Yango-Kichik-meksika-pepperoni-rolls.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/pizza-party-7-1260x560.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Vakansiya-1260x560.png" />
+        </div>
+        <div class="swiper-slide"><img src="img/карусель-5.png" /></div>
+        <div class="swiper-slide"><img src="img/slider-2.png" /></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div
+      class="melumat w-[100%] flex justify-center p-2 flex-wrap"
+      style="display: flex; justify-content: center"
+    >
+      <div class="w-[80%]" style="max-width: 1150px; gap: 15px">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 44px 44px 44px 10px;
+          "
+        >
+          <p
+            id="mehsuls"
+            style="
+              text-align: start;
+              font-size: 55px;
+              font-weight: bolder;
+              font-family: 'Papa Heavy';
+              margin-bottom: 20px;
+            "
+          >
+            Yeni məhsullarımızı dadmısınız?
+          </p>
+          <p
+            style="
+              text-align: start;
+              font-size: 25px;
+              font-weight: bold;
+              font-family: 'Papa Heavy';
+            "
+          >
+            Gözlənilən an gəldi!
+          </p>
+          <p style="text-align: start; font-size: 15px; margin-top: 10px">
+            Xırtıldayan pendirli yeni pizzalar artıq satışdadır və hər kəsi
+            ləzzətli seçimlərlə sevindirir. <br />Yeni pizzalarımız artıq bütün
+            restoranlarımızda mövcuddur. Sizi də yeni pizzalarımızı kəşf etməyə
+            dəvət edirik.
+          </p>
+        </div>
+        <div class="pizzas">
+          <div class="card flex" style="justify-content: center">
+            <div class="flex flex-col gap-4">
+              <img src="img/Pepperoni-xırçıltılı.jpeg" />
+              <p style="font-family: 'Papa Heavy'; font-size: 16px">
+                Crispy Cheese Pepperoni
+              </p>
+              <p class="text-[15px]">
+                Pizza sousu, Pepperoni, Ekstra Panko Mozzarella
+              </p>
+              <a href="">Sifariş et</a>
+            </div>
+          </div>
+          <div class="card flex" style="justify-content: center">
+            <div class="flex flex-col gap-4">
+              <img src="img/4-Pendir-xırçıltılı.jpeg" />
+              <p style="font-family: 'Papa Heavy'; font-size: 16px">
+                Crispy Cheese 4 Pendir
+              </p>
+              <p class="text-[15px]">
+                Pizza sousu, Panko Mozzarella, Feta, Parmezan və Cheddar
+                pendirləri
+              </p>
+              <a href="">Sifariş et</a>
+            </div>
+          </div>
+          <div class="card flex" style="justify-content: center">
+            <div class="flex flex-col gap-4">
+              <img src="img/Spaysi-Italyan-xırçıltılı.jpeg" />
+              <p style="font-family: 'Papa Heavy'; font-size: 16px">
+                Crispy Cheese Spaysi İtalyan
+              </p>
+              <p class="text-[15px]">
+                Pizza sousu, Ekstra İtalyan sosisi, Pepperoni, Panko Mozzarella,
+                Pul bibər
+              </p>
+              <a href="">Sifariş et</a>
+            </div>
+          </div>
+          <div class="card flex" style="justify-content: center">
+            <div class="flex flex-col gap-4">
+              <img src="img/Chicken-Ranch-xırçırtılı.jpeg" />
+              <p style="font-family: 'Papa Heavy'; font-size: 16px">
+                Crispy Cheese Çiken Ranç
+              </p>
+              <p class="text-[15px]">
+                Ranç sousu, Qril Toyuğu, Pomidor, Panko Mozzarella
+              </p>
+              <a href="">Sifariş et</a>
+            </div>
+          </div>
+          <div class="card flex" style="justify-content: center">
+            <div class="flex flex-col gap-4">
+              <img src="img/Star-Chiken-BBQ.jpg" />
+              <p style="font-family: 'Papa Heavy'; font-size: 16px">
+                Star Çiken Barbekyu
+              </p>
+              <p class="text-[15px]">
+                Təzə xəmir, pendirlə doldurulmuş ulduz kənarları və unudulmaz
+                dad – yeni Star pizzalarını sınayın!
+              </p>
+              <a href="">Sifariş et</a>
+            </div>
+          </div>
+          <div class="card flex" style="justify-content: center">
+            <div class="flex flex-col gap-4">
+              <img src="img/Star-Klassik-Pepperoni.jpg" />
+              <p style="font-family: 'Papa Heavy'; font-size: 16px">
+                Star Klassik Pepperoni
+              </p>
+              <p class="text-[15px]">
+                Təzə xəmir, pendirlə doldurulmuş ulduz kənarları və unudulmaz
+                dad – yeni Star pizzalarını sınayın!
+              </p>
+              <a href="">Sifariş et</a>
+            </div>
+          </div>
+          <div class="card flex" style="justify-content: center">
+            <div class="flex flex-col gap-4">
+              <img src="img/Star-Marqarita.jpg" />
+              <p style="font-family: 'Papa Heavy'; font-size: 16px">
+                Star Marqarita
+              </p>
+              <p class="text-[15px]">
+                Təzə xəmir, pendirlə doldurulmuş ulduz kənarları və unudulmaz
+                dad – yeni Star pizzalarını sınayın!
+              </p>
+              <a href="">Sifariş et</a>
+            </div>
+          </div>
+          <div class="card flex" style="justify-content: center">
+            <div class="flex flex-col gap-4">
+              <img src="img/Star-Vestern-BBQ.jpg" />
+              <p style="font-family: 'Papa Heavy'; font-size: 16px">
+                Star Vestern Barbekyu
+              </p>
+              <p class="text-[15px]">
+                Təzə xəmir, pendirlə doldurulmuş ulduz kənarları və unudulmaz
+                dad – yeni Star pizzalarını sınayın!
+              </p>
+              <a href="">Sifariş et</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="melumat w-[100%] flex justify-center py-4 flex-wrap"
+      style="display: flex; justify-content: center"
+    >
+      <div class="w-[100%] px-5" style="max-width: 1150px; gap: 15px">
+        <p
+          id="mehsuls"
+          style="
+            font-size: 45px;
+            font-weight: bolder;
+            font-family: 'Papa Heavy';
+            padding: 60px 0;
+          "
+        >
+          Daha çox məlumat əldə etmək istəyirsinizmi?
+        </p>
+        <div class="melumat" style="display: flex; gap: 35px">
+          <div
+            style="
+              background-color: rgb(252, 237, 219);
+              border-radius: 15px;
+              overflow: hidden;
+            "
+          >
+            <div>
+              <img src="img/better-pizza.png" />
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                padding: 15px 20px;
+              "
+            >
+              <p
+                class="font-bold"
+                style="font-family: 'Papa Heavy'; font-size: 18px"
+              >
+                Daha yaxşı inqrediyentlər. Daha yaxşı pizza.
+              </p>
+              <p style="padding-bottom: 15px; font-size: 17px" class="py-3">
+                Çox sadədir. Həmişə də belə olub. İlk pizzamızdan bəri!
+              </p>
+              <a href="">Haqqımızda</a>
+            </div>
+          </div>
+          <div
+            style="
+              background-color: rgb(252, 237, 219);
+              border-radius: 15px;
+              overflow: hidden;
+            "
+          >
+            <div>
+              <img src="img/specials.png" />
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                padding: 15px 20px;
+              "
+            >
+              <p
+                class="font-bold"
+                style="font-family: 'Papa Heavy'; font-size: 18px"
+              >
+                Hər Gün Xüsusi Pizza Təklifləri
+              </p>
+              <p style="padding-bottom: 15px; font-size: 17px" class="py-3">
+                Hər tədbir və hər büdcə üçün xüsusi pizza təkliflərimiz var.
+              </p>
+              <a href="">Haqqımızda</a>
+            </div>
+          </div>
+          <div
+            style="
+              background-color: rgb(252, 237, 219);
+              border-radius: 15px;
+              overflow: hidden;
+            "
+          >
+            <div>
+              <img src="img/store.png" />
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                padding: 15px 20px;
+              "
+            >
+              <p
+                class="font-bold"
+                style="font-family: 'Papa Heavy'; font-size: 18px"
+              >
+                Sizə yaxın restoranı tapın
+              </p>
+              <p style="padding-bottom: 15px; font-size: 17px" class="py-3">
+                Papa Johns 18 restoranı ilə xidmətinizdədir.
+              </p>
+              <a href="">Haqqımızda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-8 w-[100%] flex justify-center">
+      <div
+        class="feed bg-[#fceddb] p-[100px] flex gap-10"
+        style="padding: 50px; border-radius: 15px; gap: 40px"
+      >
+        <img class="feedback" src="img/feedback-p-1080.png" alt="feedback" />
+        <div class="flex flex-col justify-center gap-4">
+          <p
+            class="font-bold"
+            style="font-family: 'Papa Heavy'; font-size: 30px"
+          >
+            Biz rəyləri sevirik, ona görə də fikrinizi bizə bildirin.
+          </p>
+          <div>
+            <p class="text-[22px]" style="font-size: 17px">
+              PapaTalk sorğu sistemidir və sifarişinizin haqqında rəyinizi bizə
+              bildirmək şansınızdır. Daha yaxşı olmamız və daha yaxşı xidmət
+              göstərməmiz üçün rəyiniz çox vacibdir.
+            </p>
+            <p style="font-size: 17px">
+              Ən maraqlısı isə, Siz rəyinizi bildirərək bir illik pizza ehtiyatı
+              qazanmaq şansını əldə edirsiniz.
+            </p>
+          </div>
+          <button
+            class="text-start bg-[#cfeb0b] px-4 py-2 rounded-4xl border-green-950 border-[1px] text-green-1000 w-[95px]"
+          >
+            ƏTRAFLI
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="black w-[100%] h-[670px] bg-black flex justify-center gap-[100px]"
+      style="padding: 50px; margin-top: 60px; margin-bottom: 60px"
+    >
+      <div class="thirty flex flex-col gap-5 p-4 justify-center w-[30%]">
+        <p id="p1" style="font-family: 'Papa Heavy'; color: white">
+          Bizim tətbiqimizi yükləyin
+        </p>
+        <p id="p2" class="text-white">
+          və sevimli pizzanızı çatdırılma və ya al-apar üçün sifariş edin.
+        </p>
+        <div class="apps flex gap-4">
+          <img src="img/appstore-12.svg" alt="app-store" class="w-[150px]" />
+          <img
+            src="img/googleplay-13.svg"
+            alt="google-play"
+            class="w-[150px]"
+          />
+        </div>
+      </div>
+      <img id="phone" src="img/phones-AZ-az.png" />
+    </div>
+    <div
+      class="texts flex justify-center flex-wrap p-4"
+      style="display: flex; justify-content: center"
+    >
+      <div class="cards flex flex-wrap">
+        <div class="card1 flex flex-col gap-4 p-4">
+          <p style="font-family: 'Papa Heavy'" class="text-[25px]">
+            Bizə zəng edin, restoranımızda qonaq olun və ya onlayn sifariş edin
+          </p>
+          <p class="text-[16px]">
+            Restoranlarımıza gəlin, al-apar edin və ya çatdırılma üçün *7272
+            nömrəsinə zəng edin.
+          </p>
+        </div>
+        <div class="card1 flex flex-col gap-4 p-4">
+          <p style="font-family: 'Papa Heavy'" class="text-[25px]">
+            Keyfiyyət Möhürü
+          </p>
+          <p class="text-[16px]">
+            Məhsullarinizin sobadan bi̇rbaşa qapiniza qədər təhlükəsiz
+            çatdirilmasini təmi̇n edi̇r.
+          </p>
+        </div>
+        <div class="card1 flex flex-col gap-4 p-4">
+          <p style="font-family: 'Papa Heavy'" class="text-[25px]">
+            Dünyada 6000-dən çox restoran
+          </p>
+          <p class="text-[16px]">
+            Bəli, biz qlobalıq! Bizim pizzalarımız dünyanın hər bir yerində -
+            Afrika, Avropa, Asiya, Şimali və Cənubi Amerika və bütün dünya
+            müştəriləri tərəfindən bəyənilir.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-[#65A17A] w-full">
+      <div class="container">
+        <div class="grid grid-cols-2 py-5 md:grid-cols-4">
+          <div class="text-left">
+            <p class="text-white foot_p pb-3">Sirketimiz</p>
+            <ul>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Haqqımızda</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Restoranlar</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >İnqrediyentlər</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Papa Bonus</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Papa Talk</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="text-left">
+            <p class="foot_p text-white pb-3">Destek</p>
+            <ul>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Bizimlə əlaqə saxlayın</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Qeydiyyatdan kecin</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Sual-Cavab</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white text-[14px] md:text-[16px] font-sans"
+                  >Bizim desteyimiz</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full">
+            <div class="p-2 bg-white rounded-md my-2">
+              <input
+                class="w-full"
+                type="email"
+                placeholder="E-poct unvanini daxil et"
+              />
+            </div>
+            <div class="flex justify-end w-full mt-4">
+              <input
+                class="uppercase text-white bg-black p-2 px-3 rounded-md inline-block font-medium"
+                type="submit"
+                name=""
+                id=""
+                value="Abune olun"
+              />
+            </div>
+            <div class="py-3">
+              <p class="text-[14px] text-white">
+                Qeydiyyatdan keçməklə mən Papa John's-dan marketinq
+                e-məktublarını almağa razıyam. Məxfilik Siyasətimizə bax.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-[40px] flex items-center flex-col md:flex-row justify-between"
+        >
+          <p
+            class="text-white my-4 foot_p text-[18px] md:text-[24px] lg:text-[32px]"
+          >
+            Daha Yaxşı İnqrediyentlər. Daha Yaxşı Pizza.
+          </p>
+          <a class="" href="">
+            <img class="w-[160px]" src="./img/footer.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <hr class="mt-[40px] text-white" />
+      <div class="container">
+        <div
+          class="flex items-center mt-[40px] justify-between flex-col md:flex-row"
+        >
+          <div class="my-6">
+            <ul class="flex gap-[20px]">
+              <li>
+                <a
+                  href=""
+                  class="text-white font-sans text-[10px] md:text-[14px]"
+                  >Məxfilik siyasəti</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white font-sans text-[10px] md:text-[14px]"
+                  >Kuki fayılları ilə əlaqəli siyasət</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white font-sans text-[10px] md:text-[14px]"
+                  >Şərtlər və Qaydalar</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white font-sans text-[10px] md:text-[14px]"
+                  >Xəritə</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="text-center flex items-center gap-[30px]">
+            <a href=""> <img class="w-[30px]" src="./img/face.svg" alt="" /></a>
+            <a href=""><img class="w-[30px]" src="./img/insta.svg" alt="" /></a>
+            <a href=""
+              ><img class="w-[30px]" src="./img/youtube.svg" alt=""
+            /></a>
+            <a href=""
+              ><img class="w-[30px]" src="./img/tiktok.svg" alt=""
+            /></a>
+            <a href=""><img class="w-[30px]" src="./img/owl.svg" alt="" /></a>
+          </div>
+        </div>
+
+        <p class="text-white text-[12px] lg:text-[14px] font-sans py-5">
+          Mümkün ödəniş üsulları:
+        </p>
+        <div class="py-3">
+          <img src="./img/footer_payments.png" alt="" />
+        </div>
+        <p class="pb-[100px] text-white text-[12px] lg:text-[14px] font-sans">
+          ©2024 Papa Johns International, Inc. Bütün hüquqlar qorunur.
+          Məhsulların qiymətləri dəyişə bilər. İçkilər ilə bağlı bütün ticarət
+          nişanları təchizatçı tərəfdaşlarımızın qeydiyyatlı ticarət
+          nişanlarıdır. Bəzi təkliflər bir neçə pizzaların alınmasını tələb
+          edir. Bəzi təkliflər yalnız onlayn mövcuddur. Kampaniyalar, kombo və
+          endirimlər eyni zamanda istifadə edilə və toplana bilməz. Saytda
+          göstərilən məhsulların şəkli həmin məhsulun real görünüşündən fərqlənə
+          bilər. Sifarişlər təyin olunmuş çatdırılma sahəsində yerinə yetirilir.
+          Çatdırılma 10 AZN-dən sifariş etdikdə həyata keçirilir.
+        </p>
+      </div>
+    </footer>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
