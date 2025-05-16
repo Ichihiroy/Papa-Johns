@@ -124,7 +124,7 @@ function handleLocation() {
   iframe.classList.toggle("hidden");
 }
 
-// modala gore yaratdin bunu yadindan cixarma
+
 
 function toggleAccardion(id, categoryId) {
   selectedProduct = data[categoryId].find((item) => item.id == id);
